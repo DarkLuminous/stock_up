@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:stack_up/Pages/sign_up_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -18,10 +19,10 @@ class LoginPage extends StatelessWidget {
                 children: [
                   SizedBox(
                     height: 60,
-                    child: Image.asset('lib/Assets/logo.png'), // Replace with your image asset path
+                    child: Image.asset('Assets/logo.png'),
                   ),
                   const Text(
-                    'STACK UP',
+                    'STOCK UP',
                     style: TextStyle(
                       color: Colors.green,
                       fontSize: 24,
@@ -98,7 +99,11 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignUpPage()),
+                    );},
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF1B4332), // Darker green
                     padding: const EdgeInsets.symmetric(vertical: 16),
