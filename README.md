@@ -1,4 +1,4 @@
-# stack_up
+# stock_up
 
 Inventory System for small Conveniece stores. Easy tracking, and restock
 
